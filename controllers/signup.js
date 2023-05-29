@@ -68,13 +68,13 @@ router.post(
       var transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: "",
-          pass: "",
+          user: "kolaquadry@gmail.com",
+          pass: "drmaxoinftuwltke",
         },
       });
       var mailOptions = {
-        from: "",
-        to: email,
+        from: "our hospital",
+        to: "kolaquadry@gmail.com",
         subject: "Email Verification", // Subject line
         html: output, // plain text body
       };
@@ -86,7 +86,7 @@ router.post(
         console.log(info);
       });
 
-      res.send("Check you email for token to verify");
+      res.send("please check your mail to verify your token");
     });
 
     // res.redirect('login');
